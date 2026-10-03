@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#080808">
+<title>Xeelz Nexus</title>
+<link rel="manifest" href="/public/manifest.webmanifest">
+<link rel="stylesheet" href="/public/style.css">
+</head>
+<body>
+<div class="orb o1"></div><div class="orb o2"></div>
+<header class="topbar">
+  <button class="brand" id="brand"><span class="mark">X</span><span><b>XEELZ NEXUS</b><small>PREMIUM ACCESS</small></span></button>
+  <button class="iconBtn" id="linksBtn" aria-label="Menu">•••</button>
+</header>
+
+<div id="linksPanel" class="linksPanel hidden">
+  <div class="panelHead"><b>XEELZ NEXUS</b><button id="closePanel">×</button></div>
+  <a href="https://whatsapp.com/channel/0029Vb8KFvB5K3zXkMDEiv1M" target="_blank" rel="noopener">Saluran WhatsApp ↗</a>
+  <a href="https://wa.me/Xeelkyo" target="_blank" rel="noopener">Kontak Owner ↗</a>
+  <a id="sourceXeelz" href="#" target="_blank" rel="noopener">Source Xeelz ↗</a>
+  <a id="sourceGithub" href="#" target="_blank" rel="noopener">Source GitHub ↗</a>
+  <a id="sourceVercel" href="#" target="_blank" rel="noopener">Source Vercel ↗</a>
+</div>
+
+<main id="app">
+<section id="login" class="screen">
+  <div class="loginVideo glass">
+    <video src="https://files.catbox.moe/oz329q.mp4" autoplay muted loop playsinline></video>
+    <div class="videoShade"></div>
+    <div class="loginCaption"><span>SECURE ACCESS</span><b>XEELZ NEXUS</b><small>Gateway to Premium System</small></div>
+  </div>
+
+  <div class="authBox glass">
+    <div class="authHeading">
+      <div><span class="eyebrow">WELCOME BACK</span><h1>Access your Nexus</h1></div>
+      <span class="secure">● SECURE</span>
+    </div>
+    <div class="tabs">
+      <button class="tab active" data-tab="loginForm">LOGIN</button>
+      <button class="tab" data-tab="registerForm">REGISTER</button>
+    </div>
+
+    <form id="loginForm" class="authForm">
+      <label>Email / Username</label>
+      <div class="field"><span>◉</span><input id="loginEmail" type="email" autocomplete="username" placeholder="email kamu" required></div>
+      <label>Password</label>
+      <div class="field"><span>◆</span><input id="loginPass" type="password" autocomplete="current-password" placeholder="password" required><button class="eye" type="button" data-eye="loginPass">◉</button></div>
+      <button class="accessBtn" type="submit">⇥ &nbsp; ACCESS</button>
+      <p class="fine">Encrypted Connection · akun lokal di perangkat ini</p>
+    </form>
+
+    <form id="registerForm" class="authForm hidden">
+      <label>Email</label>
+      <div class="field"><span>◉</span><input id="regEmail" type="email" autocomplete="email" placeholder="email asal juga bisa" required></div>
+      <label>Password</label>
+      <div class="field"><span>◆</span><input id="regPass" type="password" autocomplete="new-password" placeholder="password asal juga bisa" required></div>
+      <label>Ulangi Password</label>
+      <div class="field"><span>◆</span><input id="regPass2" type="password" autocomplete="new-password" placeholder="ulangi password" required></div>
+      <button class="accessBtn" type="submit">✦ &nbsp; REGISTER</button>
+      <p class="fine">Register langsung membuat akun lokal dan masuk ke beranda.</p>
+    </form>
+  </div>
+</section>
+
+<section id="home" class="screen hidden">
+  <div class="welcome glass"><span id="avatar" class="avatar">X</span><div class="welcomeText"><span>WELCOME</span><b id="userEmail">-</b><small>Member Xeelz Nexus</small></div><button id="profileBtn" class="miniIcon">◎</button></div>
+
+  <div class="carousel glass">
+    <div id="slides" class="slides">
+      <article class="slide"><img src="https://files.catbox.moe/g8rtqv.jpg" alt="Xeelz Nexus banner"><div class="slideShade"></div><div class="caption"><span>XEELZ NEXUS</span><b>Premium Access</b><small>Alight Motion Premium System</small></div></article>
+      <article class="slide"><video src="https://files.catbox.moe/oz329q.mp4" autoplay muted loop playsinline></video><div class="slideShade"></div><div class="caption"><span>SECURE FLOW</span><b>Magic Link</b><small>Verify → Apply Premium</small></div></article>
+    </div>
+    <div class="sliderUI"><span>SWIPE</span><div class="dots"><i class="dot active"></i><i class="dot"></i></div></div>
+  </div>
+
+  <div class="heroCopy"><span class="eyebrow">ALIGHT MOTION</span><h2>Premium mu berkat <em>Xeelz</em></h2><p>Gunakan akun Alight Motion kamu sendiri. Proses mengikuti endpoint API provider yang kamu beli.</p></div>
+
+  <div class="statsGrid" aria-label="Statistik website">
+    <article class="statCard glass">
+      <div class="statIcon usersIcon">♙</div>
+      <span class="livePill"><i></i> LIVE</span>
+      <strong id="activeUsers">0</strong>
+      <b>Aktif User</b>
+      <small>Online dalam 60 detik terakhir</small>
+    </article>
+    <article class="statCard glass">
+      <div class="statIcon visitIcon">◉</div>
+      <span class="livePill"><i></i> LIVE</span>
+      <strong id="totalVisits">0</strong>
+      <b>Total Pengunjung</b>
+      <small>Mulai dari 0 · bertambah saat ada pengunjung baru</small>
+    </article>
+  </div>
+
+  <div class="quickGrid">
+    <button class="tile" id="premiumBtn"><span class="tileIcon">✦</span><b>Premium</b><small>Aktivasi Alight Motion</small></button>
+    <a class="tile" href="https://whatsapp.com/channel/0029Vb8KFvB5K3zXkMDEiv1M" target="_blank" rel="noopener"><span class="tileIcon">◉</span><b>Saluran</b><small>WhatsApp Xeelz</small></a>
+    <a class="tile" href="https://wa.me/Xeelkyo" target="_blank" rel="noopener"><span class="tileIcon">✆</span><b>Owner</b><small>Chat langsung</small></a>
+    <button class="tile" id="profileBtn2"><span class="tileIcon">◎</span><b>Profile</b><small>Akun kamu</small></button>
+  </div>
+
+  <div class="statusCard glass">
+    <div class="statusTop"><div><span class="eyebrow">ACCESS STATUS</span><b>Aktivasi Premium</b></div><span class="activePill">● API ONLINE</span></div>
+    <div class="statusLine"><span>Daily limit provider</span><b id="limitText">5 / 5</b></div>
+    <div class="progress"><i id="limitBar"></i></div>
+    <button class="outline" id="premiumBtn2">BUKA AKTIVASI <span>→</span></button>
+  </div>
+</section>
+
+<section id="profile" class="screen hidden">
+  <button class="back" data-back>← Kembali</button>
+  <div class="profileBig glass"><div id="profileAvatar" class="bigAvatar">X</div><span class="eyebrow">YOUR ACCOUNT</span><h2 id="profileEmail">-</h2><p>Member Xeelz Nexus</p><button id="logout2" class="accessBtn">LOGOUT</button></div>
+</section>
+
+<section id="premium" class="screen hidden">
+  <button class="back" data-back>← Kembali</button>
+  <div class="pageHead"><span class="eyebrow">ALIGHT MOTION</span><h2>Premium mu berkat <em>Xeelz</em></h2><p>Alur resmi dari provider: <b>Send Magic Link → Verify Account → Apply Premium</b>.</p></div>
+  <div class="premiumBox glass">
+    <div class="providerBadge">✦ XEELZ PREMIUM ACCESS</div>
+
+    <div class="step"><i>01</i><div><b>Kirim Magic Link</b><small>Masukkan email Alight Motion target.</small></div></div>
+    <label>Email Alight Motion</label>
+    <div class="field"><span>✉</span><input id="amEmail" type="email" placeholder="user@gmail.com"></div>
+    <button id="sendLink" class="accessBtn">KIRIM MAGIC LINK <span>→</span></button>
+
+    <div id="linkResult" class="result"></div>
+
+    <div class="step"><i>02</i><div><b>Verifikasi Link</b><small>Tempel link utuh yang kamu terima di email.</small></div></div>
+    <label>Raw Verification Link</label>
+    <div class="field"><span>↗</span><input id="rawLink" type="url" placeholder="https://.../__/auth/action?..."></div>
+    <button id="verify" class="outline">VERIFY ACCOUNT <span>→</span></button>
+
+    <div id="verifyResult" class="result"></div>
+
+    <div class="step"><i>03</i><div><b>Apply Premium</b><small>Gunakan idToken hasil verifikasi untuk mengaktifkan premium.</small></div></div>
+    <button id="apply" class="accessBtn" disabled>APPLY PREMIUM <span>✦</span></button>
+    <div id="applyResult" class="result"></div>
+
+    <div class="note"><b>Limit 5 akun / 24 jam</b><span>Limit provider. Reset mengikuti window 24 jam provider.</span></div>
+  </div>
+</section>
+</main>
+
+<nav id="bottomNav" class="bottomNav hidden"><button data-nav="home" class="active">⌂<small>BERANDA</small></button><button data-nav="premium">✦<small>PREMIUM</small></button><button data-nav="profile">◎<small>PROFILE</small></button></nav>
+<div id="toast" class="toast"></div>
+<script src="/public/app.js"></script>
+</body>
+</html>
