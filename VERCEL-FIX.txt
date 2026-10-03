@@ -1,0 +1,2 @@
+# Vercel note
+This project intentionally has no vercel.json runtime override. Vercel auto-detects Node.js functions in /api.
